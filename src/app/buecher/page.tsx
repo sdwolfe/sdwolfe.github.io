@@ -28,7 +28,7 @@ export default function Buecher(){
         },
         {
             coverImage:"/images/marla_2_das_erbe.jpg",
-            bookTitle: "Das Erbe",
+            bookTitle: "Das Erbe2",
             bookDescription: "Die Abenteuer der jungen Halbalbe Marla gehen weiter: Als die albischen Widerstandskämpfer \
             erfahren, dass sich ein Drache in höchster Not befindet, begeben sich Marla und ihre Gefährten auf die \
             gefährliche Reise zum Drachenvolk. Dabei gerät Marla selbst in die Fänge des Feindes und entwickelt einen \
@@ -44,7 +44,7 @@ export default function Buecher(){
 
             { books.map((book) => {
                 return(
-                    <BookCard book={book} /> 
+                    <BookCard key={book.bookTitle} book={book} /> 
                 )
             })}
 
